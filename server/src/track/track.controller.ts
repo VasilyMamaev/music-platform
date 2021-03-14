@@ -43,7 +43,7 @@ export class TrackController {
 
   @Get(':id')
   getOne(@Param('id') id: ObjectId) {
-    return this.getOne(id);
+    return this.trackService.getOne(id);
   }
 
   @Delete(':id')
